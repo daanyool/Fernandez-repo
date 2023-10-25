@@ -70,8 +70,10 @@ public class MainStudent {
       String l = obj.nextLine();
       s.setLastName(l);
       
-      System.out.println("Enter Suffix: ");
+      System.out.println("Enter Suffix(Enter \"NONE\" if none): ");
       String su = obj.nextLine();
+      if(su.equalsIgnoreCase("none"))
+         su = "";
       s.setSuffix(su);
       
       System.out.println("FirstName: " + s.getFirstName());
